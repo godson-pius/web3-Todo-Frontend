@@ -7,7 +7,7 @@ function App() {
   const [popup, setPopup] = useState(false);
   const [todos, setTodos] = useState([]);
   const [isServerdown, setIsserverdown] = useState(false);
-  const URL = "http://localhost:3001";
+  const URL = "https://web3todo.herokuapp.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -76,7 +76,7 @@ function App() {
             ))
           ) : (
             <div className="animate-pulse">
-              {isServerdown ? "Please check your network!" : "Loading"}
+              {isServerdown ? "Server is down! Try again" : "Loading"}
             </div>
           )}
         </div>
