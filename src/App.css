@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  font-family: 'Macondo', cursive;
+}
+
+body {
+  background: #062d45;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-weight: bolder;
+  color: rgba(160, 244, 160, 0.664);
+  cursor: pointer;
+}
